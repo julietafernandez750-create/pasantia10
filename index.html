@@ -1,0 +1,76 @@
+<!-- Trabajo Práctico No 10 - Entrega
+     Alumna: Fernandez Julieta - 6to año
+     Archivo: index.html
+-->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TP10 - Responsividad - Fernandez Julieta</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Julieta F. - Proyecto Responsive</h1>
+      <nav class="main-nav">
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-grid" id="home">
+    <article class="content">
+      <h2>Introducción a la responsividad</h2>
+      <p>
+        En este trabajo práctico practicamos media queries, optimización de imágenes,
+        y pseudo-elementos con animaciones. El contenido está pensado para mostrarse
+        correctamente en escritorio, tablet y móvil.
+      </p>
+
+      <section class="card">
+        <h3>Ejemplo de imagen adaptativa</h3>
+        <p>La imagen abajo usa <code>max-width:100%</code> para no salirse del contenedor.</p>
+        <img src="https://via.placeholder.com/800x400.png?text=Imagen+de+ejemplo" alt="Ejemplo" />
+      </section>
+
+      <section class="card new-demo">
+        <h3>Mini desafío: etiqueta "Nuevo"</h3>
+        <p>Este div tiene un pseudo-elemento <code>::before</code> que simula una etiqueta "Nuevo".</p>
+      </section>
+
+      <section class="card">
+        <h3>Botón con pseudo-elemento animado</h3>
+        <p>El botón tiene un <code>::after</code> que parpadea.</p>
+        <button class="btn">Enviar</button>
+      </section>
+    </article>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h4>Datos del trabajo</h4>
+        <p><strong>Docente:</strong> Lucio Petrucci</p>
+        <p><strong>Fecha de entrega:</strong> [28/11/2025]</p>
+      </div>
+
+      <div class="widget">
+        <h4>Tips</h4>
+        <ul>
+          <li>Simulá tamaños con las herramientas del navegador.</li>
+          <li>Probá los breakpoints: 1024px (escritorio), 768px (tablet), 480px (móvil).</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <p>Realizado por: <strong>Fernandez Julieta</strong> — 6to año</p>
+      <p>Materia: Desarrollo Web • Trabajo Práctico No 10</p>
+    </div>
+  </footer>
+</body>
+</html>
